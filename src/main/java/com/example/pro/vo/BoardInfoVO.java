@@ -13,6 +13,7 @@ public class BoardInfoVO {
 	private int biCnt;
 	private int uiNum;
 	//페이징
-	private int page = 1; // 페이지 수
+	private int page = 1; // 페이지 수, default값 설정
 	private int rows = 10; // 행 수
+	private String uiName;
 }

@@ -8,4 +8,7 @@ public interface BoardInfoMapper {
 	
 	List<BoardInfoVO> selectBoardInfos(BoardInfoVO board);
 	
+	BoardInfoVO selectBoardInfo(BoardInfoVO board);
+	
+	int updateBoardInfoCnt(BoardInfoVO board);
 }

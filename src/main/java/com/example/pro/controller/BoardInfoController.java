@@ -27,4 +27,13 @@ public class BoardInfoController {
 		m.addAttribute("page", boardInfoService.getBoardInfos(boardInfoVO));
 		return "board/board-list";
 	}
+	@GetMapping("/board")
+	public String getBoard(@ModelAttribute BoardInfoVO board, Model m) {
+		m.addAttribute("board", boardInfoService.selectBoardInfo(board));
+		return "board/board-view";
+	}
+	@GetMapping("/board-update")
+	public String goUpdateboard() {
+		return "board/board-update";
+	}
 }
